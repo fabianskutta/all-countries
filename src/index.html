@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title -->
+    <title>All Countries of the World</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" type="image/png" href="https://cdn.fabian.lol/logos/favicon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn.fabian.lol/logos/favicon.png">
+    <link id="dynamic-favicon" rel="shortcut icon" href="https://cdn.fabian.lol/logos/favicon.png">
+    <link rel="icon" type="image/png" href="https://cdn.fabian.lol/logos/favicon.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://cdn.fabian.lol/logos/favicon.png" sizes="96x96">
+
+    <!-- SEO -->
+    <meta property="og:title" content="All Countries of the World | fabian.lol" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://countries.fabian.lol" />
+    <meta property="og:image" content="https://cdn.fabian.lol/banner/countries.fabian.lol.jpg" />
+    <meta name="theme-color" content="#111217">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- import CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/style.min.css?v=2">
+
+    <!-- import fontawesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- import librarys -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
+    
+</head>
+<body>
+    <h1>All Countries of the World</h1>
+    <p class="api"><a target="_blank" href="https://restcountries.com/">using REST Countries API</a></p>
+    <div class="search-wrapper">
+    <div id="search" class="search">
+        <input type="search" id="myInput" onkeyup="searchfunction()" placeholder="Search for a Country..." title="Type in a Country">
+    </div>
+    </div>
+    <div class="countries">
+    <div class="countries-container" id="countries">
+        <div class="loading">
+        <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <h2>Loading 249 Countries...</h2>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+    <div class="copyright">© fabian.lol&nbsp;<script type="text/javascript">
+        document.write(new Date().getFullYear());
+        </script>&nbsp;•&nbsp;<a href="https://fabian.lol" target="_blank">Made with <i class="fas fa-heart"></i> by
+        <span class="fabian">Fabian</span>
+        </a>
+    </div>
+    </div>
+    <a class="top" id="top" onclick="topFunction()"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- import JS -->
+    <script src="./assets/js/script.min.js"></script>
+</body>
+</html>

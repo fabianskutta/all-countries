@@ -1,0 +1,47 @@
+.footer {
+    background-color: #15171d;
+    color: #ffffff;
+    padding: 2rem 0;
+
+    .footer-container {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 1rem;
+
+        a {
+            padding: 0 0.25rem;
+        }
+    }
+
+    .copyright {
+        text-align: center;
+        font-size: 15px;
+
+        .fa-heart {
+            color: #f9063b;
+          }
+          .fabian {
+            background: -webkit-linear-gradient(right, #f9063b, #f9a90d);
+            background: linear-gradient(270deg, #f9063b 0, #f9a90d);
+            background-size: 350%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-animation: gradientText 3s ease infinite;
+            animation: gradientText 3s ease infinite;
+            font-weight: 700;
+          }
+    }
+}
+
+@keyframes gradientText {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

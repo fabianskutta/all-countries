@@ -1,0 +1,39 @@
+.search-wrapper {
+    height: 84.4px;
+  }
+  
+  .search {
+    padding: 1.25rem;
+    box-sizing: border-box;
+    width: 100%;
+    z-index: 9999;
+    background: #111217ea;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    will-change: transform;
+  }
+  
+  #myInput {
+    background-image: url("https://cdn.fabian.lol/icon.svg");
+    background-position: 13px 13px;
+    background-color: transparent;
+    border: 1px solid #f4f6fb;
+    border-radius: 1.25rem;
+    color: #fff;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+  }
