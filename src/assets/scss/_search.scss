@@ -9,8 +9,10 @@
     z-index: 9999;
     background: #111217ea;
     backdrop-filter: blur(10px);
-    overflow: hidden;
     will-change: transform;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   #myInput {
@@ -23,7 +25,8 @@
     background-repeat: no-repeat;
     width: 100%;
     font-size: 16px;
-    padding: 12px 20px 12px 40px;
+    font-weight: 300;
+    padding: 12px 140px 12px 40px;
     border: 1px solid #ddd;
     box-sizing: border-box;
     overflow: hidden;

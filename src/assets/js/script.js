@@ -2,8 +2,10 @@
 // ▬▬▬▬▬▬▬▬▬▬▬▬ GET Countries over API ▬▬▬▬▬▬▬▬▬▬▬▬
 // ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 
+var data = "none";
+
 axios.get("https://restcountries.com/v3.1/all").then((res) => {
-  let data = res.data;
+  data = res.data;
   document.getElementById("countries").innerHTML = "";
   data.forEach((data, i) => {
     if (data.unMember == true) {
@@ -23,11 +25,18 @@ axios.get("https://restcountries.com/v3.1/all").then((res) => {
       <li><span>UN Member: </span>${data.unMember}</li>
       <li><span>TLD: </span>${data.tld}</li>
     </ul>
-  <a target="_blank" href="${data.maps.googleMaps}" class="btn-big btn-primary"><i class="far fa-map"></i> Google Maps</a>
+  <a target="_blank" href="${data.maps.googleMaps}" class="btn btn-small btn-primary"><i class="far fa-map"></i> Google Maps</a>
       </div>
   </div>`;
   });
 });
+
+function random() {
+  var randomNum = Math.round(Math.random() * data.length);
+  var land = data[randomNum].name.common;
+  document.getElementById("myInput").value = land;
+  searchfunction();
+}
 
 // ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 // ▬▬▬▬▬▬▬▬▬▬▬▬ Top Button ▬▬▬▬▬▬▬▬▬▬▬▬
